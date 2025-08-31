@@ -24,7 +24,7 @@ int main() {
     if (numLeaves == 2) {
         //Leaf 1
         cout << "Enter a name for leaf 1: ";
-        cin >> leaf1;
+        std::getline(std::cin >> std::ws, leaf1);
 
         cout << "Enter the number of values for " + leaf1 + ": ";
         cin >> numValues1;
@@ -46,7 +46,7 @@ int main() {
 
         //Leaf 2
         cout << "\n\nEnter a name for leaf 2: ";
-        cin >> leaf2;
+        std::getline(std::cin >> std::ws, leaf2);
 
         cout << "Enter the number of values for " + leaf2 + ": ";
         cin >> numValues2;
@@ -69,7 +69,7 @@ int main() {
     }
     else if (numLeaves == 1) {
         cout << "Enter a name for the leaf: ";
-        cin >> leaf1;
+        std::getline(std::cin >> std::ws, leaf1);
 
         cout << "\nEnter the number of values for " + leaf1 + ": ";
         cin >> numValues1;
